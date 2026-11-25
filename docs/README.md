@@ -73,7 +73,7 @@ studio/
         ├── app.js         路由表与外壳
         ├── lib.js         请求、弹窗、抽屉、Toast、轮询
         ├── tools-spec.js  19 个工具的表单定义（单一事实源）
-        ├── styles.css
+        ├── style.css
         ├── components/
         │   └── review.js   结果审核抽屉（素材预览 / 批注 / 提交通过驳回 / 进入画布）
         └── pages/         32 个页面模块（含 works / film / tasks 表格视图 / import / sheet / vpost）
