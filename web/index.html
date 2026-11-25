@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>剧作工坊 · 本地 AI 影视创作工作台</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div id="app" class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">剧</div>
+      <div class="brand-text"><strong>剧作工坊</strong><span>本地 AI 影视创作</span></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      <div class="unlimited-pill"><i class="dot"></i>无限额度 · 本地版</div>
+      <button class="ghost tiny" data-action="open-tasks">任务中心 <span id="task-badge" class="badge hidden">0</span></button>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn only-mobile" data-action="toggle-side">☰</button>
+      <div class="crumbs" id="crumbs"></div>
+      <div class="top-actions">
+        <span class="chip" id="engine-chip">引擎检测中…</span>
+        <button class="ghost" data-action="open-tasks">任务</button>
+        <button class="primary" data-action="quick-create">+ 新建创作</button>
+      </div>
+    </header>
+    <section class="view" id="view"><div class="loading">加载中…</div></section>
+  </main>
+</div>
+<div class="drawer-mask" id="drawer-mask" data-action="close-drawer"></div>
+<aside class="drawer" id="drawer"><header><strong id="drawer-title">任务中心</strong><button class="icon-btn" data-action="close-drawer">✕</button></header><div class="drawer-body" id="drawer-body"></div></aside>
+<div class="modal-mask" id="modal-mask"><div class="modal" id="modal"></div></div>
+<div class="toasts" id="toasts"></div>
+<script type="module" src="/src/app.js"></script>
+</body>
+</html>

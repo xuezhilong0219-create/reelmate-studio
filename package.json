@@ -1,0 +1,12 @@
+{
+  "name": "reelmate-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "本地 AI 影视创作工作台 - reelmate.cn 功能复刻（去付费）",
+  "scripts": {
+    "start": "node server/index.mjs",
+    "dev": "node server/index.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
